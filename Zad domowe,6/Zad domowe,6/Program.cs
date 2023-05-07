@@ -49,7 +49,7 @@ public class Employee
     public string name { get; set; }
     public string surname { get; set; }
     public int age { get; set; }
-    
+
     public List<int> points = new List<int>();
     public void Addpoints(int point)
     {
