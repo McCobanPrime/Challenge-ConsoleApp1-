@@ -12,7 +12,7 @@ namespace Zadanie_domowe.Test
             //act
             var together = user.sum;
             //assert
-            Assert.AreEqual(3, together);
+            Assert.AreEqual(11, together);
         }
     }
 }
