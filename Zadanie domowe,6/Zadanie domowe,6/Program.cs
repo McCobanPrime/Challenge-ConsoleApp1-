@@ -44,7 +44,7 @@ Console.WriteLine("Użytkownik " + user2.name + " zdobył " + user2.sum + " punk
 Console.WriteLine("Użytkownik " + user3.name + " zdobył " + user3.sum + " punktów.");
 Console.WriteLine("Oczywiście że zwyciężcą zostaje mający " + winner + ", zdobywając " + winnerSpoints + " punktów.");
 
-class Employee
+public class Employee
 {
     public string name { get; set; }
     public string surname { get; set; }
