@@ -10,7 +10,7 @@ namespace Zadanie_domowe.Test
             user.Addpoints(4);
             user.Addpoints(7);
             //act
-            var together = user.sum;
+            var together = user.Sum;
             //assert
             Assert.AreEqual(11, together);
         }

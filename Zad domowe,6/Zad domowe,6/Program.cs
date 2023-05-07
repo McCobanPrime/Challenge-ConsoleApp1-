@@ -23,39 +23,39 @@ user3.Addpoints(4);
 string winner = "-";
 int winnerSpoints = 0;
 
-if (user1.sum > user2.sum && user1.sum > user3.sum)
+if (user1.Sum > user2.Sum && user1.Sum > user3.Sum)
 {
-    winner = user1.age + " lat " + user1.name + " " + user1.surname;
-    winnerSpoints = user1.sum;
+    winner = user1.Age + " lat " + user1.Name + " " + user1.Surname;
+    winnerSpoints = user1.Sum;
 }
-else if (user2.sum > user1.sum && user2.sum > user3.sum)
+else if (user2.Sum > user1.Sum && user2.Sum > user3.Sum)
 {
-    winner = user2.age + " lat " + user2.name + " " + user2.surname;
-    winnerSpoints = user2.sum;
+    winner = user2.Age + " lat " + user2.Name + " " + user2.Surname;
+    winnerSpoints = user2.Sum;
 }
-else if (user3.sum > user2.sum && user3.sum > user1.sum)
+else if (user3.Sum > user2.Sum && user3.Sum > user1.Sum)
 {
-    winner = user3.age + " lat " + user3.name + " " + user3.surname;
-    winnerSpoints = user3.sum;
+    winner = user3.Age + " lat " + user3.Name + " " + user3.Surname;
+    winnerSpoints = user3.Sum;
 }
 
-Console.WriteLine("Użytkownik " + user1.name + " zdobył " + user1.sum + " punktów.");
-Console.WriteLine("Użytkownik " + user2.name + " zdobył " + user2.sum + " punktów.");
-Console.WriteLine("Użytkownik " + user3.name + " zdobył " + user3.sum + " punktów.");
+Console.WriteLine("Użytkownik " + user1.Name + " zdobył " + user1.Sum + " punktów.");
+Console.WriteLine("Użytkownik " + user2.Name + " zdobył " + user2.Sum + " punktów.");
+Console.WriteLine("Użytkownik " + user3.Name + " zdobył " + user3.Sum + " punktów.");
 Console.WriteLine("Oczywiście że zwyciężcą zostaje mający " + winner + ", zdobywając " + winnerSpoints + " punktów.");
 
 public class Employee
 {
-    public string name { get; set; }
-    public string surname { get; set; }
-    public int age { get; set; }
+    public string Name { get; set; }
+    public string Surname { get; set; }
+    public int Age { get; set; }
 
     public List<int> points = new List<int>();
     public void Addpoints(int point)
     {
         this.points.Add(point);
     }
-    public int sum
+    public int Sum
     {
         get
         {
@@ -64,8 +64,8 @@ public class Employee
     }
     public Employee(string name, string surname, int age)
     {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
+        this.Name = name;
+        this.Surname = surname;
+        this.Age = age;
     }
 }
